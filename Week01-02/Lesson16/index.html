@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+       }
+
+       .container{
+            margin-left: 20px;
+       }
+
+       #desc{
+            margin-top: 20px;
+            margin-bottom: 20px;
+       }
+
+       .form-group{
+           font-size: 18px;
+       }
+
+       .form-group>input{
+           padding: 3px;
+           margin-bottom: 5px;
+       }
+
+       .container>form>input{
+           margin-top: 5px;
+           padding: 2px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 id="title">Travel reservation form</h1>
+            <h3 id="desc">* denotes mandotory</h3>
+
+            <div class="form-group">
+                <p class="desc-input">Full name*:</p>
+                <input type="text" name="fullName" id="fullName" placeholder="FistName LastName" required>
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">Email address*:</p>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">Select Tour Package*:</p>
+                <select>
+                    <option value="goa">Goa</option>
+                    <option value="vn">VietNam</option>
+                    <option value="uih">Quy Nhơn City</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">Arrival date*</p>
+                <input type="date" name="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">Number of persons*:</p>
+                <input type="tel" name="numberPhone" id="numPhone" placeholder="Unknow_Type" required>
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">What would you want to avail?*</p>
+                <p>Boarding <input type="checkbox"></p>
+                <p>Fooding <input type="checkbox"></p>
+                <p>Sight seeing<input type="checkbox"></p>
+            </div>
+            
+            <div class="form-group">
+                <p class="desc-input">Discount Coupon Code:</p>
+                <input type="number" name="discount" id="discount" placeholder="Unknow_Type">
+            </div>
+
+            <div class="form-group">
+                <p class="desc-input">Terms and conditions*</p>
+                <input type="radio" name="reply" id="yes">I agree
+                <input type="radio" name="reply" id="no"> I disagree
+            </div>
+
+            <input type="submit" value="Complete reservation">
+        </form>
+    </div>
+</body>
+</html>

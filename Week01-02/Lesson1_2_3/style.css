@@ -1,0 +1,46 @@
+.lesson-1 {
+    background-color: orange;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+}
+
+hr{
+    background-color:gray;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.lesson-2{
+    width: 498px;
+    border: 1px solid black ;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.lesson-3{
+    width: 800px;
+    height: 597px;
+    background-color: orange;
+}
+
+#center{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#rightDown{
+    margin-top: 120px;
+    text-align: right;
+}
+
+/*Xếp theo hàng ngang*/
+.container-row{
+    display: flex;
+    flex-direction: row;
+}
+/*Xếp theo cột*/
+.container-collunm{
+    display: flex;
+    flex-direction: column;
+}

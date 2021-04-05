@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form-1{
+            width: 200px;
+            height: 100px;
+            border: 2px solid gray;
+        }
+
+        form{
+            margin-left: 5px;
+        }
+        .submit-1{
+            margin-top: 10px;
+        }
+        /*Form-2*/
+        .form-2{
+            width: 200px;
+            height: auto;
+            border: 2px solid gray;
+            margin-left: 20px;
+        }
+
+        .input-form-2{
+            margin-bottom: 10px;
+        }
+
+        .submit-2{
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+        
+        /*Form-3*/
+        .form-3{
+            margin-left: 10px;
+            width: 650px;
+            height: 400px;
+            border: 2px solid gray;
+        }
+
+        .desc{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .exampleBox{
+            margin-bottom: 10px;
+        }
+        .example{
+            margin-left: 155px;
+            width: 200px;
+        }
+        .email{
+            margin-left: 100px;
+            width: 200px;
+        }
+
+        .message{
+            margin-left: 115px;
+            margin-top: 10px;
+        }
+
+        .selected{
+            margin-top: 10px;
+        }
+        select{
+            margin-left: 20px;
+            width: 100px;
+        }
+
+        .checkBox{
+            margin-top: 10px;
+        }
+
+        .checkBox>input{
+            margin-left: 100px;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+        .container{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-1">
+            <form action="#" method="post">
+                <p>Name:</p>
+                <input type="text" placeholder="Thanh Van" required>
+                <input type="submit" class="submit-1">
+            </form>
+        </div>
+
+        <div class="form-2">
+            <form action="">
+                <p class="title">Name:</p>
+                <input class="input-form-2" type="text" >
+                <p class="title">Telephone Number:</p>
+                <input class="input-form-2" type="tel">
+                <p class="email">Email:</p>
+                <input class="input-form-2" type="text">
+                <p class="title">Favorite Color:</p>
+                <input class="input-form-2" type="color">
+                <p class="title">Date of Birth:</p>
+                <input class="input-form-2" type="date">
+                <input type="submit" class="submit-2">
+            </form>
+        </div>
+
+        <div class="form-3">
+            <form action="">
+                <h2>Contact Us</h2>
+                <p class="desc">
+                    Use the following form to send a message to Example Cafe
+                </p>
+
+                <div class="Y_email">
+                    Your email
+                    <input type="text" class="email">
+                </div>
+    
+                <div class="box-message">
+                    Message
+                    <textarea name="" id="" cols="30" rows="10" class="message"></textarea>
+                </div>
+                
+                <div class="selected">
+                    How did you hear of us
+                    <select name="" id="" class="">
+                        <option value="">Google</option>
+                        <option value="">Facebook</option>
+                    </select>
+                </div>
+    
+                <div class="checkBox">
+                        Newsletter
+                    <input type="checkbox">Ensure this box is checked if you would like to receive email update
+                </div>
+
+                <button>Send message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
